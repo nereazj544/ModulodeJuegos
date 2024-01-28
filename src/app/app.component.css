@@ -2,19 +2,31 @@
     margin: 0; padding: 0;
 }
 body{
-    background: url(../assets/img/wallpaper.jpg) no-repeat fixed;
-    background-size: cover;
+    background: black  scroll;
     
     
 }
 
 /* Caja movible */
 .boxmovible{
-    width: 302px;
-    height: 307px;
+    width: 242px;
+    height: 234px;
     position: absolute;
     cursor: move;
-    background-image: url(../assets/img/leewon.png);
-    margin-top: 400px;
+    background-image: url(../assets/img/leewon3.png);
+    margin-top: 200px;
+}
 
+mat-toolbar{
+    flex: 1 1 auto;
+}
+
+button{
+    margin-right: 30px;
+    border: solid black 5px;
+    border-radius: 30%;
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 30%;
+    -ms-border-radius: 30%;
+    -o-border-radius: 30%;
 }
