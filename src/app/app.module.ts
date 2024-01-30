@@ -4,14 +4,21 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatToolbarModule} from '@angular/material/toolbar';
 
+/**
+ * !COMPONENTES
+ */
+import { PptComponent } from './componentes/ppt/ppt.component';
+import { PortafoliosComponent } from './componentes/portafolios/portafolios.component';
+
+/** 
+ * ! MATERIAL ANGULAR
+*/
+import {MatToolbarModule} from '@angular/material/toolbar';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import {MatIconModule} from '@angular/material/icon';
-import { PortafoliosComponent } from './componentes/portafolios/portafolios.component';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
-import { PptComponent } from './componentes/ppt/ppt.component';
 
 
 @NgModule({

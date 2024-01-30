@@ -1,15 +1,12 @@
 <mat-toolbar color="primary"> Piedra, papel o tijera</mat-toolbar>
-
 <div class="container">
-
-    <div class="consola">    
-    {{texto}}
-    <br>
-    {{texto2}}
-    <br>
-    {{texto3}}
+    <div class="consola">
+        {{texto}}
+        <br>
+        {{texto2}}
+        <br>
+        {{texto3}}
     </div>
-
     <div class="selecciones">
         <div (click)="elegir('tijeras')" class="eleccion tijeras">
             <img src="../../../assets/img/scissors.png" alt="">
@@ -19,9 +16,6 @@
         </div>
         <div (click)="elegir('piedra')" class="eleccion piedra">
             <img src="../../../assets/img/rock.png" alt="">
-
         </div>
     </div>
-
-
 </div>
