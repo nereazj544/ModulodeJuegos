@@ -9,12 +9,16 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import {MatIconModule} from '@angular/material/icon';
 import { PortafoliosComponent } from './componentes/portafolios/portafolios.component';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatListModule} from '@angular/material/list';
+import { PptComponent } from './componentes/ppt/ppt.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PortafoliosComponent
+    PortafoliosComponent,
+    PptComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +26,9 @@ import { PortafoliosComponent } from './componentes/portafolios/portafolios.comp
     BrowserAnimationsModule,
     DragDropModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatDividerModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

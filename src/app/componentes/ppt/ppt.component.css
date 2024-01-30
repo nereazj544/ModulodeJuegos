@@ -1,0 +1,47 @@
+*{
+    margin: 0; padding: 0;
+    color: white;
+}
+
+.container{
+    display: flex;
+    width: 50%;
+    height: 50%;
+    margin: 2%;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.consola{
+    width: 20%; height: 20%;
+    background-color: black;
+}
+
+.selecciones{
+width: 20%; height: 20%;
+    background-color: black;
+}
+
+.eleccion{
+    margin-left: 250px;
+    padding: 4px;
+    width: 200px; height: 40px;
+    background-color: green;
+    cursor: pointer;
+    border: solid 2px black;
+}
+
+.eleccion:hover{
+    background-color: blue;
+}
+
+.papel, .tijeras, .piedra{
+    width: 30px; width: 30px;
+    display: flex;
+}
+
+
+
