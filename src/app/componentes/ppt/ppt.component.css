@@ -28,7 +28,7 @@ span {
 
 .consola {
     width: 600px;
-    height: 300px;
+    height: 365px;
     background-color: rgba(0, 0, 0, 0.551);
     border: 2px solid black;
     color: white;
@@ -40,27 +40,34 @@ span {
     width: 300px;
     height: 100px;
     justify-content: center;
-    background-color: aqua;
+    background-color: black;
     cursor: pointer;
 }
 
 .eleccion{
-    width: 80px; height: 80px;
+    width: 90px; height: 50px;
+    padding: 3%;
     margin: 10px;
 }
 
 
 .papel, .tijeras, .piedra{
+    width: 50px; width: 60px;
     display: inline-block;
 }
-img{
+.scissors, .rock, .paper{
     width: 50px; width: 60px;
+    /* padding-left: 30px; */
 }
 
 .eleccion:hover{
-    background-color: rgba(0, 0, 255, 0.267);
+    background-color: aqua;
 }
 
 .marcador{
     background-color: white;
+}
+
+.ganaste, .empate, .pierdes{
+    width: 180px; 
 }

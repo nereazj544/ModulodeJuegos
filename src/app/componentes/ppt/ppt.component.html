@@ -13,13 +13,13 @@
 
     <div class="selecciones">
         <div (click)="elegir('tijeras')" class="eleccion tijeras">
-            <img src="../../assets/img/scissors.png" alt="">
+            <img class="scissors" src="../../assets/img/scissors.png" alt="">
         </div>
         <div (click)="elegir('piedra')" class="eleccion piedra">
-            <img src="/../../assets/img/rock.png" alt="">
+            <img class="rock" src="/../../assets/img/rock.png" alt="">
         </div>
         <div (click)="elegir('papel')"  class="eleccion papel">
-            <img src="../../../assets/img/paper.png" alt="">
+            <img class="paper" src="../../../assets/img/paper.png" alt="">
         </div>
     </div>
     <div class="consola">
@@ -28,11 +28,11 @@
     {{texto2}}
     <br>
     <br>
-    <img *ngIf="img1" [src]="img1" alt="Ganaste">
+    <img class="ganaste" *ngIf="img1" [src]="img1" alt="Ganaste">
     <br>
-    <img *ngIf="img3" [src]="img3" alt="Empate">
+    <img class="empate" *ngIf="img3" [src]="img3" alt="Empate">
     <br>
-    <img *ngIf="img2" [src]="img2" alt="Pierdes">
+    <img class="pierdes" *ngIf="img2" [src]="img2" alt="Pierdes">
     </div>
 </div>
 
