@@ -60,3 +60,7 @@ img{
 .eleccion:hover{
     background-color: rgba(0, 0, 255, 0.267);
 }
+
+.marcador{
+    background-color: white;
+}

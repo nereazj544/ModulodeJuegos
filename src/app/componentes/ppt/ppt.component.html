@@ -5,11 +5,15 @@
     <span>Piedra, papel o tijera</span>
 </mat-toolbar>
 
+<div class="marcador">
+    <p>Usuario: {{vU}}</p>
+    <p>Maquina: {{vM}}</p>
+</div>
 <div class="container">
 
     <div class="selecciones">
         <div (click)="elegir('tijeras')" class="eleccion tijeras">
-            <img src="/../../assets/img/scissors.png" alt="">
+            <img src="../../assets/img/scissors.png" alt="">
         </div>
         <div (click)="elegir('piedra')" class="eleccion piedra">
             <img src="/../../assets/img/rock.png" alt="">

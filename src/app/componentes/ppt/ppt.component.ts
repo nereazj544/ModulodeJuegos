@@ -14,6 +14,10 @@ export class PptComponent implements OnInit {
   img2: string = "";
   img3: string = "";
 
+  vM: number = 0;
+  vU: number = 0;
+
+
   eleccionesDis: string[] = ["piedra", "papel", "tijeras"];
 
   ngOnInit(): void {
@@ -27,6 +31,7 @@ export class PptComponent implements OnInit {
     this.img2 = "";
     this.img3 = "";
 
+
     this.texto = "Elegiste: " + eleccion;
 
     var eleccionM = Math.floor(Math.random() * 3); 
@@ -38,11 +43,13 @@ export class PptComponent implements OnInit {
     if ((eleccion == "tijeras" && this.eleccionesDis[eleccionM] == "papel") ||
       (eleccion == "papel" && this.eleccionesDis[eleccionM] == "piedra")
       || (eleccion == "piedra" && this.eleccionesDis[eleccionM] == "tijeras")) {
-      this.img1 = '/../../assets/img/GANAS.jpg';
+      this.vU++;
+        this.img1 = '/../../assets/img/GANAS.jpg';
       //!Esto hara que se muestre la imagen de que has ganado.
     } else if ((eleccion == "tijeras" && this.eleccionesDis[eleccionM] == "piedra") ||
     (eleccion == "papel" && this.eleccionesDis[eleccionM] == "tijeras")
     || (eleccion == "piedra" && this.eleccionesDis[eleccionM] == "papel")) {
+      this.vM++;
       // this.texto3 = "PIERDES";
       this.img2 = '/../../assets/img/PIERDES.png';
       //!Esto hara que se muestre la imagen de que has perdido.
