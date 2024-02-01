@@ -6,37 +6,67 @@
 </mat-toolbar>
 
 
+
 <div class="container">
-<div class="vidas-user">
-    <img src="../../../assets/img/corazon.png" alt="" class="corazones-user">
-    <img src="../../../assets/img/corazon.png" alt="" class="corazones-user">
-    <img src="../../../assets/img/corazon.png" alt="" class="corazones-user">
-    <img src="../../../assets/img/corazon.png" alt="" class="corazones-user">
-    <img src="../../../assets/img/cpum.png" alt="" class="corazones-user">
-</div>
-    <div class="selecciones">
-        <div (click)="elegir('tijeras')" class="eleccion tijeras">
-            <img class="scissors" src="../../assets/img/scissors.png" alt="">
+
+    <div class="vidas">
+        <div class="v-user">
+            <p>MIS VIDAS: </p>
+            <img src="../../../assets/img/corazon.png" alt="" class="c-user">
+            <img src="../../../assets/img/corazon.png" alt="" class="c-user">
+            <img src="../../../assets/img/corazon.png" alt="" class="c-user">
+            <img src="../../../assets/img/corazon.png" alt="" class="c-user">
+            <img src="../../../assets/img/corazon.png" alt="" class="c-user">
         </div>
-        <div (click)="elegir('piedra')" class="eleccion piedra">
-            <img class="rock" src="/../../assets/img/rock.png" alt="">
+        <!-- !SELECCIONES DE LAS "MANOS" -->
+        <div class="selecciones-user">
+            <div (click)="elegir('tijeras')" class="eleccion tijeras">
+                <img class="scissors" src="../../assets/img/scissors.png" alt="">
+            </div>
+            <div (click)="elegir('piedra')" class="eleccion piedra">
+                <img class="rock" src="/../../assets/img/rock.png" alt="">
+            </div>
+            <div (click)="elegir('papel')"  class="eleccion papel">
+                <img class="paper" src="../../../assets/img/paper.png" alt="">
+            </div>
         </div>
-        <div (click)="elegir('papel')"  class="eleccion papel">
-            <img class="paper" src="../../../assets/img/paper.png" alt="">
+        <div class="consola">
+            {{texto}}
+            <br>
+            {{texto2}}
+            <br>
+            <br>
+            <img class="ganaste" *ngIf="img1" [src]="img1" alt="Ganaste">
+            <br>
+            <img class="empate" *ngIf="img3" [src]="img3" alt="Empate">
+            <br>
+            <img class="pierdes" *ngIf="img2" [src]="img2" alt="Pierdes">
+        </div>
+        <!-- !SELECCIONES DE LAS "MANOS" -->
+        <div class="selecciones-user">
+            <div (click)="elegir('tijeras')" class="eleccion tijeras">
+                <img class="scissors" src="../../assets/img/scissors.png" alt="">
+            </div>
+            <div (click)="elegir('piedra')" class="eleccion piedra">
+                <img class="rock" src="/../../assets/img/rock.png" alt="">
+            </div>
+            <div (click)="elegir('papel')"  class="eleccion papel">
+                <img class="paper" src="../../../assets/img/paper.png" alt="">
+            </div>
+        </div>
+        
+        <div class="v-maq">
+            <p>VIDAS MAQUINA:</p>
+            <img src="../../../assets/img/corazon.png" alt="" class="c-maq">
+            <img src="../../../assets/img/corazon.png" alt="" class="c-maq">
+            <img src="../../../assets/img/corazon.png" alt="" class="c-maq">
+            <img src="../../../assets/img/corazon.png" alt="" class="c-maq">
+            <img src="../../../assets/img/corazon.png" alt="" class="c-maq">
+
         </div>
     </div>
-    <div class="consola">
-    {{texto}}
-    <br>
-    {{texto2}}
-    <br>
-    <br>
-    <img class="ganaste" *ngIf="img1" [src]="img1" alt="Ganaste">
-    <br>
-    <img class="empate" *ngIf="img3" [src]="img3" alt="Empate">
-    <br>
-    <img class="pierdes" *ngIf="img2" [src]="img2" alt="Pierdes">
-    </div>
+
+
 </div>
 
 

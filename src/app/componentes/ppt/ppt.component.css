@@ -1,5 +1,3 @@
-
-
 mat-tooalbar {
     flex: 1 1 auto;
 }
@@ -71,6 +69,14 @@ span {
 .ganaste, .empate, .pierdes{
     width: 180px; 
 }
-.vidas-user{
+
+/* ! VIDAS */
+.vidas{
+    display: flex;
+    width: 200px;
+    align-items: center;
+}
+
+.v-user{
     display: inline-block;
 }
