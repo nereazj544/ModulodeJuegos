@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 
 
 /**
- * > _[!IMPORTANT]_
- * > Comentarios explicando algunos procesos en plan, nota mentales. 
+ * ! IMPORTANTE
+ ** > Comentarios explicando algunos procesos en plan, nota mentales. 
  */
 
 /**
@@ -26,20 +26,22 @@ import { Component, OnInit } from '@angular/core';
 **  <p>Maquina: {{vM}}</p>
 ** </div>
 *! TypeScript
-** En el export
-
+** Dentro del export se crean las variables de los contadores tanto de la maquina como del user. 
+* vM: number = 0;
+* vU: number = 0; 
+** Dentro del ifelse se especifica cuando se va aumentar uno y cuando el otro. Cuando sea la maquina sera cuando el usario pierda contra la maquina y cuando sea el usuario sera cuando el usuario gane a la maquina.
+* this.vU++;
+* this.vM++;
 */
 export class PptComponent implements OnInit {
 
   texto: string = "";
   texto2: string = "";
-  texto3: string = "";
   img1: string = "";
   img2: string = "";
   img3: string = "";
 
-  vM: number = 0;
-  vU: number = 0;
+  
 
 
   eleccionesDis: string[] = ["piedra", "papel", "tijeras"];
@@ -67,14 +69,12 @@ export class PptComponent implements OnInit {
     if ((eleccion == "tijeras" && this.eleccionesDis[eleccionM] == "papel") ||
       (eleccion == "papel" && this.eleccionesDis[eleccionM] == "piedra")
       || (eleccion == "piedra" && this.eleccionesDis[eleccionM] == "tijeras")) {
-      this.vU++;
       this.img1 = '/../../assets/img/GANAS.jpg';
       //!Esto hara que se muestre la imagen de que has ganado.
     } else if ((eleccion == "tijeras" && this.eleccionesDis[eleccionM] == "piedra") ||
       (eleccion == "papel" && this.eleccionesDis[eleccionM] == "tijeras")
       || (eleccion == "piedra" && this.eleccionesDis[eleccionM] == "papel")) {
-      this.vM++;
-      // this.texto3 = "PIERDES";
+      
       this.img2 = '/../../assets/img/PIERDES.png';
       //!Esto hara que se muestre la imagen de que has perdido.
 
