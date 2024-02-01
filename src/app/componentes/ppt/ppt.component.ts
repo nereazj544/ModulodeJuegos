@@ -10,13 +10,11 @@ import { Component, OnInit } from '@angular/core';
 /**
  * ! IMPORTANTE
  ** > Comentarios explicando algunos procesos en plan, nota mentales. 
- */
 
-/**
 * ! IMPLEMENTACION DE LOS CORAZONES / METODO DE LOS CORAZONES (CREO)
 * 
 * ? Posible metodo de los corazones. 
-* *
+* * 
 *
 * ! Contador a modo de texto (sin la imprtacion de los corazones (simplemente un "marcador"))
 *
