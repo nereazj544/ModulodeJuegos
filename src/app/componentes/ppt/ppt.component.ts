@@ -5,6 +5,30 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './ppt.component.html',
   styleUrls: ['./ppt.component.css']
 })
+
+
+/**
+ * > _[!IMPORTANT]_
+ * > Comentarios explicando algunos procesos en plan, nota mentales. 
+ */
+
+/**
+* ! IMPLEMENTACION DE LOS CORAZONES / METODO DE LOS CORAZONES (CREO)
+* 
+* ? Posible metodo de los corazones. 
+* *
+*
+* ! Contador a modo de texto (sin la imprtacion de los corazones (simplemente un "marcador"))
+*
+* !HTML
+** <div class="marcador">
+**   <p>Usuario: {{vU}}</p>
+**  <p>Maquina: {{vM}}</p>
+** </div>
+*! TypeScript
+** En el export
+
+*/
 export class PptComponent implements OnInit {
 
   texto: string = "";
@@ -34,7 +58,7 @@ export class PptComponent implements OnInit {
 
     this.texto = "Elegiste: " + eleccion;
 
-    var eleccionM = Math.floor(Math.random() * 3); 
+    var eleccionM = Math.floor(Math.random() * 3);
     //!Sin floor se quedan como decimales, con el floor se redondea a cero y a tres. 
 
     this.eleccionesDis[eleccionM];
@@ -44,26 +68,28 @@ export class PptComponent implements OnInit {
       (eleccion == "papel" && this.eleccionesDis[eleccionM] == "piedra")
       || (eleccion == "piedra" && this.eleccionesDis[eleccionM] == "tijeras")) {
       this.vU++;
-        this.img1 = '/../../assets/img/GANAS.jpg';
+      this.img1 = '/../../assets/img/GANAS.jpg';
       //!Esto hara que se muestre la imagen de que has ganado.
     } else if ((eleccion == "tijeras" && this.eleccionesDis[eleccionM] == "piedra") ||
-    (eleccion == "papel" && this.eleccionesDis[eleccionM] == "tijeras")
-    || (eleccion == "piedra" && this.eleccionesDis[eleccionM] == "papel")) {
+      (eleccion == "papel" && this.eleccionesDis[eleccionM] == "tijeras")
+      || (eleccion == "piedra" && this.eleccionesDis[eleccionM] == "papel")) {
       this.vM++;
       // this.texto3 = "PIERDES";
       this.img2 = '/../../assets/img/PIERDES.png';
       //!Esto hara que se muestre la imagen de que has perdido.
+
+
     }
     else {
       this.img3 = '/../../assets/img/Empate.png';
       //!Esto hara que se muestre la imagen de que has empatado.
-      
+
     }
   }
 
 
 
-  
+
   /**  
    * !CLASE
    * 
