@@ -54,20 +54,20 @@ export class PptComponent implements OnInit {
     if ((eleccion == "tijeras" && this.eleccionesDis[eleccionM] == "papel") ||
       (eleccion == "papel" && this.eleccionesDis[eleccionM] == "piedra")
       || (eleccion == "piedra" && this.eleccionesDis[eleccionM] == "tijeras")) {
-      this.img1 = '../../assets/img/GANAS.png';
+      this.img1 = '../../../assets/img/GANAS.png';
       this.cUser++;
     
 
     } else if ((eleccion == "tijeras" && this.eleccionesDis[eleccionM] == "piedra") ||
       (eleccion == "papel" && this.eleccionesDis[eleccionM] == "tijeras")
       || (eleccion == "piedra" && this.eleccionesDis[eleccionM] == "papel")) {
-      this.img2 = '../../assets/img/PIERDES.png';
+      this.img2 = '/../../assets/img/PIERDES.png';
       this.cMaq++;
       this.cUser--;
       
     }
     else {
-      this.img3 = '../../assets/img/Empate.png';
+      this.img3 = '/../../assets/img/Empate.png';
       
     }
   }
