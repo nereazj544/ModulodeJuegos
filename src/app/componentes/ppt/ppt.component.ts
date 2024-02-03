@@ -11,11 +11,7 @@ import { Component, OnInit } from '@angular/core';
  * ! IMPORTANTE
  ** > Comentarios explicando algunos procesos en plan, nota mentales. 
 
-* ! IMPLEMENTACION DE LOS CORAZONES / METODO DE LOS CORAZONES (CREO)
-* 
-* ? Posible metodo de los corazones. 
-* * 
-*
+* ! IMPLEMENTACION DE LOS CORAZONES
 * ! Contador a modo de texto (sin la imprtacion de los corazones (simplemente un "marcador"))
 *
 * !HTML
@@ -33,13 +29,25 @@ import { Component, OnInit } from '@angular/core';
 */
 export class PptComponent implements OnInit {
 
+  
+  //!textos
   texto: string = "";
-  texto2: string = "";
+  texto2: string= "";
+  //! IMAGENES DE LOS RESULTADOS
   img1: string = "";
   img2: string = "";
   img3: string = "";
+  //! IMAGENES DE LOS CORAZONES
+  corazonesuser: string [] = ["../../assets/img/corazoon.png","../../assets/img/corazoon.png", "../../assets/img/corazoon.png", "../../assets/img/corazoon.png", "../../assets/img/corazoon.png"];
+  cpumuser: string [] = ["../../assets/img/cpuum.png", "../../assets/img/cpuum.png", "../../assets/img/cpuum.png", "../../assets/img/cpuum.png", "../../assets/img/cpuum.png"];
 
-  
+  //! CORAZONES MAQUINA
+  corazonesmaq: string [] = ["../../assets/img/corazoon.png","../../assets/img/corazoon.png", "../../assets/img/corazoon.png", "../../assets/img/corazoon.png", "../../assets/img/corazoon.png"];
+  cpummaq: string [] = ["../../assets/img/cpuum.png", "../../assets/img/cpuum.png", "../../assets/img/cpuum.png", "../../assets/img/cpuum.png", "../../assets/img/cpuum.png"]; //! CORAZONES "VACIOS"
+
+
+  //!Reseteo de la partida
+  resteo: boolean = false;
 
 
   eleccionesDis: string[] = ["piedra", "papel", "tijeras"];
@@ -49,17 +57,11 @@ export class PptComponent implements OnInit {
   }
 
   elegir(eleccion: string) {
-
-    //!Reseteo de imagenes
     this.img1 = "";
     this.img2 = "";
     this.img3 = "";
 
-
-    this.texto = "Elegiste: " + eleccion;
-
-    var eleccionM = Math.floor(Math.random() * 3);
-    //!Sin floor se quedan como decimales, con el floor se redondea a cero y a tres. 
+    var eleccionM = Math.floor(Math.random() * 3); //se multipilica por 3 y se optiene un numero entre cero y tres (con decimales). 
 
     this.eleccionesDis[eleccionM];
     this.texto2 = "La maquina ha elegido: " + this.eleccionesDis[eleccionM];
@@ -67,22 +69,33 @@ export class PptComponent implements OnInit {
     if ((eleccion == "tijeras" && this.eleccionesDis[eleccionM] == "papel") ||
       (eleccion == "papel" && this.eleccionesDis[eleccionM] == "piedra")
       || (eleccion == "piedra" && this.eleccionesDis[eleccionM] == "tijeras")) {
-      this.img1 = '/../../assets/img/GANAS.jpg';
-      //!Esto hara que se muestre la imagen de que has ganado.
+      this.img1 = '../../assets/img/GANAS.png';
+
+    
+
     } else if ((eleccion == "tijeras" && this.eleccionesDis[eleccionM] == "piedra") ||
       (eleccion == "papel" && this.eleccionesDis[eleccionM] == "tijeras")
       || (eleccion == "piedra" && this.eleccionesDis[eleccionM] == "papel")) {
+      this.img2 = '../../assets/img/PIERDES.png';
       
-      this.img2 = '/../../assets/img/PIERDES.png';
-      //!Esto hara que se muestre la imagen de que has perdido.
-
-
     }
     else {
-      this.img3 = '/../../assets/img/Empate.png';
-      //!Esto hara que se muestre la imagen de que has empatado.
-
+      this.img3 = '../../assets/img/Empate.png';
+      
     }
+  }
+
+  //!RESETO DEL JUEGO
+  rest(){
+    this.resteo = false;
+    
+    this.texto2="";
+    this.img1 = "";
+    this.img2 = "";
+    this.img3 = "";
+
+    this.corazonesmaq = ["../../assets/img/corazoon.png","../../assets/img/corazoon.png", "../../assets/img/corazoon.png", "../../assets/img/corazoon.png", "../../assets/img/corazoon.png"];
+    this.corazonesuser = ["../../assets/img/corazoon.png","../../assets/img/corazoon.png", "../../assets/img/corazoon.png", "../../assets/img/corazoon.png", "../../assets/img/corazoon.png"];
   }
 
 

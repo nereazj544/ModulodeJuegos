@@ -9,7 +9,45 @@
 
 <!-- *JUEGO -->
 
-
+<div class="container">
+    <div class="selecciones">
+        <div (click)="elegir('tijeras')" class="eleccion tijeras">
+            <img src="../../assets/img/scissors.png" alt="">
+        </div>
+        <div (click)="elegir('piedra')" class="eleccion piedra">
+            <img src="../../assets/img/rock.png" alt="">
+        </div>
+        <div (click)="elegir('papel')" class="eleccion papel">
+            <img src="../../assets/img/paper.png" alt="">
+        </div>
+    </div>
+    <div class="container-c1">
+        <!-- !VIDAS USER -->
+        <div class="vidas-user">
+            <img class="iconuser" src="../../assets/img/usuarioicon.png" alt="destrucion" srcset="">
+            <p>MIS CORAZONES: </p>
+            <img class="corazones" *ngFor="let corazon of corazonesuser" src="{{corazon}}" alt="">
+        </div>
+        <!-- !CONSOLA -->
+        <div class="consola">
+            <div class="mensjaes">
+                <p class="mensajeincial">{{texto}}</p>
+                <p>{{texto2}}</p>
+                <br>
+                <img class="ganaste" *ngIf="img1" [src]="img1" alt="Ganaste">
+                <img class="empate" *ngIf="img3" [src]="img3" alt="Empate">
+                <img class="pierdes" *ngIf="img2" [src]="img2" alt="Pierdes">
+            </div>
+        </div>
+        <!-- !VIDAS MAQUINA -->
+        <div class="vidas-maq">
+            <img class="iconmaq" src="../../assets/img/maquinaicon.png" alt="abundancia">
+            <p>CORAZONES MAQUINA: </p>
+            <img class="corazones" *ngFor="let corazon of corazonesmaq" src="{{corazon}}" alt="">
+        </div>
+    </div>
+    <button class="rest" (click)="rest()">¿Juegas de nuevo?</button>
+</div>
 
 
 
