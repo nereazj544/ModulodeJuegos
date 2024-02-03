@@ -27,6 +27,7 @@
             <img class="iconuser" src="../../assets/img/usuarioicon.png" alt="destrucion" srcset="">
             <p>MIS CORAZONES: </p>
             <img class="corazones" *ngFor="let corazon of corazonesuser" src="{{corazon}}" alt="">
+            <p>Partidas ganas: {{cUser}}</p>
         </div>
         <!-- !CONSOLA -->
         <div class="consola">
@@ -44,12 +45,11 @@
             <img class="iconmaq" src="../../assets/img/maquinaicon.png" alt="abundancia">
             <p>CORAZONES MAQUINA: </p>
             <img class="corazones" *ngFor="let corazon of corazonesmaq" src="{{corazon}}" alt="">
+            <p>Partidas ganas: {{cMaq}}</p>
         </div>
     </div>
     <button class="rest" (click)="rest()">¿Juegas de nuevo?</button>
 </div>
-
-
 
 
 <!-- *PRIMER JUEGO
