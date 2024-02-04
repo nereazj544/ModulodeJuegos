@@ -44,7 +44,7 @@ span {
 /*! CONSOLA */
 .consola{
     width: 400px;
-    height: 350px;
+    height: 358px;
     border: 2px solid black;
     background-color: rgba(0, 0, 0, 0.499);
     padding-right: 3px;
@@ -63,7 +63,16 @@ span {
 
 .mensajeincial{
     font-weight: normal;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px rgba(20,255,236,0.22), 0 0 30px rgba(20, 255, 235, 0.652), 0 0 40px rgba(20,255,236,0.22), 0 0 55px rgba(20,255,236,0.22), 0 0 75px rgba(20, 255, 235, 0.652);
     color: #FFFFFF;
+}
+
+.mensajefin{
+    padding: 4px;
+    padding-top: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
     text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px rgba(20,255,236,0.22), 0 0 30px rgba(20, 255, 235, 0.652), 0 0 40px rgba(20,255,236,0.22), 0 0 55px rgba(20,255,236,0.22), 0 0 75px rgba(20, 255, 235, 0.652);
 }
 

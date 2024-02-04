@@ -1,5 +1,5 @@
 <mat-toolbar color="accent">
-    <button mat-incon-button class="Boton-Menu" arial-label="Menu">
+    <button mat-incon-button class="Boton-Menu" arial-label="Menu" matTooltip="Atras">
         <mat-icon>arrow_back</mat-icon>
     </button>
     <span>Piedra, papel o tijera</span>
@@ -31,13 +31,20 @@
         </div>
         <!-- !CONSOLA -->
         <div class="consola">
+            <div class="findeljuego" *ngIf="fin">
+                <div class="mensajefin">
+                    <p>{{texto4}}</p>
+                    <p> {{texto3}}</p>
+                </div>
+            </div>
+
             <div class="mensjaes">
                 <p class="mensajeincial">{{texto}}</p>
                 <p>{{texto2}}</p>
                 <br>
                 <img class="ganaste" *ngIf="img1" [src]="img1" alt="Ganaste">
-                <img class="empate" *ngIf="img3" [src]="img3" alt="Empate">
                 <img class="pierdes" *ngIf="img2" [src]="img2" alt="Pierdes">
+                <img class="empate" *ngIf="img3" [src]="img3" alt="Empate">
             </div>
         </div>
         <!-- !VIDAS MAQUINA -->
