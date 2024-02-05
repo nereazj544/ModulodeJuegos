@@ -1,7 +1,11 @@
-<mat-toolbar color="accent">
-    <button mat-incon-button class="Boton-Menu" arial-label="Menu" matTooltip="Atras">
-        <mat-icon>arrow_back</mat-icon>
-    </button>
+<body>
+    
+    
+    
+    <mat-toolbar color="accent">
+        <button mat-incon-button class="Boton-Menu" arial-label="Menu" matTooltip="Atras">
+            <mat-icon>arrow_back</mat-icon>
+        </button>
     <span>Piedra, papel o tijera</span>
 </mat-toolbar>
 
@@ -24,6 +28,7 @@
     <div class="container-c1">
         <!-- !VIDAS USER -->
         <div class="vidas-user">
+            <p>EQUIPO DESTRUCION:</p>
             <img class="iconuser" src="../../assets/img/usuarioicon.png" alt="destrucion" srcset="">
             <p>MIS CORAZONES: </p>
             <img class="corazones" *ngFor="let corazon of corazonesuser" src="{{corazon}}" alt="">
@@ -37,10 +42,16 @@
                     <p> {{texto3}}</p>
                 </div>
             </div>
-
+            
             <div class="mensjaes">
                 <p class="mensajeincial">{{texto}}</p>
-                <p>{{texto2}}</p>
+                <p>{{texto2}} </p>
+                <!--  ! EN IMAGENES LA ELECION DE LA MAQUINA
+                    <img class="eleccionmaquina" *ngIf="eleccionesDis" [src]="eleccionesDis" alt="Ganaste">
+                    
+                -->
+                
+                
                 <br>
                 <img class="ganaste" *ngIf="img1" [src]="img1" alt="Ganaste">
                 <img class="pierdes" *ngIf="img2" [src]="img2" alt="Pierdes">
@@ -49,6 +60,7 @@
         </div>
         <!-- !VIDAS MAQUINA -->
         <div class="vidas-maq">
+            <p>EQUIPO ABUNDANCIA:</p>
             <img class="iconmaq" src="../../assets/img/maquinaicon.png" alt="abundancia">
             <p>CORAZONES MAQUINA: </p>
             <img class="corazones" *ngFor="let corazon of corazonesmaq" src="{{corazon}}" alt="">
@@ -60,12 +72,12 @@
 
 
 <!-- *PRIMER JUEGO
-<!-- ! HTML corazones (ignorar)
-    
-    <div class="container">
-
-    <div class="vidas">
-        <div class="v-user">
+    <!-- ! HTML corazones (ignorar)
+        
+        <div class="container">
+            
+            <div class="vidas">
+                <div class="v-user">
             <p>MIS VIDAS: </p>
             <img src="../../../assets/img/corazon.png" alt="" class="c-user">
             <img src="../../../assets/img/corazon.png" alt="" class="c-user">
@@ -118,7 +130,7 @@
             <img src="../../../assets/img/corazon.png" alt="" class="c-maq">
             <img src="../../../assets/img/corazon.png" alt="" class="c-maq">
             <img src="../../../assets/img/corazon.png" alt="" class="c-maq">
-
+            
         </div>
     </div>
 
@@ -130,29 +142,32 @@
 
 <!-- !ECHO EN CLASE
     
-
+    
     <div class="container">
-
-    <div class="consola">    
-    {{texto}}
-    <br>
-    {{texto2}}
-    <br>
-    {{texto3}}
-    </div>
-
-    <div class="selecciones">
-        <div (click)="elegir('tijeras')" class="eleccion tijeras">
-            <img src="../../../assets/img/scissors.png" alt="">
+        
+        <div class="consola">    
+            {{texto}}
+            <br>
+            {{texto2}}
+            <br>
+            {{texto3}}
         </div>
-        <div (click)="elegir('papel')" class="eleccion papel">
-            <img src="../../../assets/img/paper.png" alt="">
-        </div>
+        
+        <div class="selecciones">
+            <div (click)="elegir('tijeras')" class="eleccion tijeras">
+                <img src="../../../assets/img/scissors.png" alt="">
+            </div>
+            <div (click)="elegir('papel')" class="eleccion papel">
+                <img src="../../../assets/img/paper.png" alt="">
+            </div>
         <div (click)="elegir('piedra')" class="eleccion piedra">
             <img src="../../../assets/img/rock.png" alt="">
 
         </div>
     </div>
-
-
+    
+    
 </div> -->
+
+<!-- ! END HTML -->
+</body>

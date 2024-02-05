@@ -38,7 +38,14 @@ export class PptComponent implements OnInit {
   resteo: boolean = false;
   fin: boolean = false;
 
-  eleccionesDis: string[] = ["piedra", "papel", "tijeras"];
+eleccionesDis: string[] = ["piedra", "papel", "tijeras"];
+/*
+   ! IMAGENES de papel piedra o tijera
+  eleccionesDis: string [] = ["../../../assets/img/paper.png",
+  "../../../assets/img/rock.png",
+  "../../../assets/img/scissors.png",
+];
+*/
 
   ngOnInit(): void {
     this.texto = "¡PIEDRA, PAPEL O TIJERA! ELIGE TU ELECCION"
