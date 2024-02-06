@@ -20,13 +20,15 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import { InicioComponent } from './componentes/inicio/inicio.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     PortafoliosComponent,
-    PptComponent
+    PptComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,
