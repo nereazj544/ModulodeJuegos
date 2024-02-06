@@ -2,10 +2,15 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PptComponent } from './componentes/ppt/ppt.component';
 import { InicioComponent } from './componentes/inicio/inicio.component';
+import { ErrorComponent } from './componentes/error/error.component';
+import { PortafoliosComponent } from './componentes/portafolios/portafolios.component';
 
 const routes: Routes = [
   {path: '', component: InicioComponent},
-  {path: 'piedra-papel-piedra', component: PptComponent },
+  {path: 'piedra-papel-tijera', component: PptComponent },
+  {path: 'portafolios', component: PortafoliosComponent},
+  {path: '**', component: ErrorComponent},
+
   
 ];
 

@@ -1,1 +1,43 @@
-<p>inicio works!</p>
+<body>
+    <mat-toolbar>
+        <button mat-incon-button class="Boton-Menu" arial-label="Menu">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span>MODULOS DE JUEGOS</span>
+    </mat-toolbar>
+
+    <!-- <app-ppt></app-ppt> -->
+
+    <!-- !PAGINAS ALEATORIAS 
+        <button><a (click)="random()">El ataque de aventurino</a></button>
+     -->
+    <!-- !BOTON DE EJEMPLO
+        <a routerLink="/piedra-papel-tijera"><button><3</button></a> --> -->
+    <mat-list>
+        <div class="divjuegos">
+            <p>Juego 1: <span class="nombrejuego">Piedra, Papel o Tijeras</span></p>
+            <button class="buttonjuego" routerLink="/piedra-papel-tijera" matTooltip="¡Jugemos al piedra papel o tijera contra la maquina! ¿quien ganara? ¿Destruccion o abundancia">Jugar</button>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="divjuegos piedra">
+            <p>Juego 2: <span class="nombrejuego"></span></p>
+            <button class="buttonjuego" routerLink="/piedra-papel-tijera">Jugar</button>
+        </div>
+        <mat-divider></mat-divider>
+        <div class="divjuegos">
+            <p>Juego 3: <span class="nombrejuego"></span></p>
+            <button class="buttonjuego" routerLink="/piedra-papel-tijera">Jugar</button>
+        </div>
+    </mat-list>
+
+
+
+
+    
+    <div class="boxmovible" cdkDrag routerLink="/portafolios"></div>
+
+
+
+
+    <!-- END HTML -->
+</body>

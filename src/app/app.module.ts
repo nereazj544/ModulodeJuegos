@@ -21,6 +21,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { InicioComponent } from './componentes/inicio/inicio.component';
+import { ErrorComponent } from './componentes/error/error.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { InicioComponent } from './componentes/inicio/inicio.component';
     AppComponent,
     PortafoliosComponent,
     PptComponent,
-    InicioComponent
+    InicioComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,

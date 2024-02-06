@@ -1,0 +1,70 @@
+*{
+    margin: 0; padding: 0;
+}
+body{
+    background: black  scroll;
+    
+    
+}
+
+/* Caja movible */
+.boxmovible{
+    width: 242px;
+    height: 234px;
+    position: absolute;
+    cursor: move;
+    background-image: url(../../../assets/img/leewon3.png);
+    margin-top: 20px;
+    margin-left: 1200px;
+    position: absolute;
+}
+
+mat-toolbar{
+    flex: 1 1 auto;
+}
+
+button{
+    margin-right: 30px;
+    border: solid black 5px;
+    border-radius: 30%;
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 30%;
+    -ms-border-radius: 30%;
+    -o-border-radius: 30%;
+}
+
+/* ! MAT-LIST */
+
+mat-list{
+    /*display: inline-flex;
+    */margin: 30px;
+    flex: 2;
+    color: white;
+    background-color: rgba(115, 116, 115, 0.334);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.divjuegos{
+    padding: 25px;
+}
+
+.nombrejuego{
+    font-weight: 50%;
+
+}
+
+.buttonjuego{
+    background-color: rgba(138, 163, 229, 0.615);
+    padding: 3px;
+    border: solid black 3px;
+    font-size: 15px;
+    border-radius: 0%;
+    -webkit-border-radius: 0%;
+    -moz-border-radius: 0%;
+    -ms-border-radius: 0%;
+    -o-border-radius: 0%;
+}

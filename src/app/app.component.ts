@@ -14,12 +14,12 @@ export class AppComponent {
 
 
 
-const routes: Routes = [
-  { path: 'Componente', component: PortafoliosComponent} 
-];
+// const routes: Routes = [
+//   { path: 'Componente', component: PortafoliosComponent} 
+// ];
 
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
+// @NgModule({
+//   imports: [RouterModule.forRoot(routes)],
+//   exports: [RouterModule]
+// })
 export class AppRoutingModule { }
