@@ -1,0 +1,20 @@
+body{
+    background: url(../../../assets/img/error.png) no-repeat;
+    background-size: cover;
+
+}
+
+mat-tooalbar {
+    flex: 1 1 auto;
+}
+
+button {
+    margin: 15px;
+    cursor: pointer;
+    border: solid 2px red;
+    background-color: red;
+}
+
+span {
+    font-size: 25px;
+}

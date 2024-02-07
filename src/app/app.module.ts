@@ -22,6 +22,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { ErrorComponent } from './componentes/error/error.component';
+import { BricksBreakComponent } from './componentes/bricks-break/bricks-break.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { ErrorComponent } from './componentes/error/error.component';
     PortafoliosComponent,
     PptComponent,
     InicioComponent,
-    ErrorComponent
+    ErrorComponent,
+    BricksBreakComponent
   ],
   imports: [
     BrowserModule,

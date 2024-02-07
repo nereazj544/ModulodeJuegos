@@ -39,7 +39,7 @@ mat-list{
     /*display: inline-flex;
     */margin: 30px;
     flex: 2;
-    color: white;
+    color: blue;
     background-color: rgba(115, 116, 115, 0.334);
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -67,4 +67,14 @@ mat-list{
     -moz-border-radius: 0%;
     -ms-border-radius: 0%;
     -o-border-radius: 0%;
+}
+
+
+/* ! FONDOS */
+
+.ppt{
+    background-image: url(/../../assets/img/bannerjuego1.png);
+}
+.ladrillos{
+    background-image: url(/../../assets/img/bannerjuego2.png);
 }
