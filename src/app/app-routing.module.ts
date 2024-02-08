@@ -7,13 +7,19 @@ import { PortafoliosComponent } from './componentes/portafolios/portafolios.comp
 import { BricksBreakComponent } from './componentes/bricks-break/bricks-break.component';
 
 const routes: Routes = [
-  {path: '', component: InicioComponent},
-  {path: 'piedra-papel-tijera', component: PptComponent },
-  {path: 'portafolios', component: PortafoliosComponent},
-  {path: 'BrickBreaker', component: BricksBreakComponent},
-  {path: '**', component: ErrorComponent},
+  //!PAGINA INICIO
 
+  {path: '', component: InicioComponent},
+  //!JUEGOS
+
+  {path: 'piedra-papel-tijera', component: PptComponent },
+  {path: 'BrickBreaker', component: BricksBreakComponent},
   
+  //!PORTAFOLIOS (CV)
+  {path: 'portafolios', component: PortafoliosComponent},
+
+  //!ERROR
+  {path: '**', component: ErrorComponent}
 ];
 
 @NgModule({
