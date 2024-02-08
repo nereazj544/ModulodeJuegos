@@ -1,0 +1,13 @@
+/* ! TOOALBAR */
+mat-tooalbar {
+    flex: 1 1 auto;
+}
+
+button {
+    margin: 15px;
+    cursor: pointer;
+}
+
+span {
+    font-size: 25px;
+}

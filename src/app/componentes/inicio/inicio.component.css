@@ -3,8 +3,6 @@
 }
 body{
     background: black  scroll;
-    
-    
 }
 
 /* Caja movible */
@@ -53,7 +51,7 @@ mat-list{
 }
 
 .nombrejuego{
-    font-weight: 50%;
+    font-weight: 70%;
 
 }
 
