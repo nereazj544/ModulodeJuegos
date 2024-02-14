@@ -10,6 +10,10 @@
     
     
     <div class="container">
+        <div class="jugador">
+            <p>Jugador: {{currentPlayer}}</p>
+            <p>{{resultado}}</p>
+        </div>
         <div class="resultados">
             <div class="resultado1">
                 <img class="img" src="../../../assets/img/jingyuan.png" alt="">
@@ -20,26 +24,27 @@
                 <span>Player 2: {{cplay2}}</span>
             </div>
         </div>
-        
         <div class="game">
             <div class="celdas">
-                <div class="celda"></div>
-                <div class="celda"></div>
-                <div class="celda"></div>
-            </div>
-            <div class="celdas">
-                <div class="celda"></div>
-                <div class="celda"></div>
-                <div class="celda"></div>
-            </div>
-            <div class="celdas">
-                <div class="celda"></div>
-                <div class="celda"></div>
-                <div class="celda"></div>
-            </div>
+                <div class="celda" (click)="cellClicked(0, 0)">{{ board[0][0] === 1 ? 'X' : (board[0][0] === 2 ? 'O' : '') }}</div>
+                <div class="celda" (click)="cellClicked(0, 1)">{{ board[0][1] === 1 ? 'X' : (board[0][1] === 2 ? 'O' : '') }}</div>
+                <div class="celda" (click)="cellClicked(0, 2)">{{ board[0][2] === 1 ? 'X' : (board[0][2] === 2 ? 'O' : '') }}</div>
+              </div>
+              <div class="celdas">
+                <div class="celda" (click)="cellClicked(1, 0)">{{ board[1][0] === 1 ? 'X' : (board[1][0] === 2 ? 'O' : '') }}</div>
+                <div class="celda" (click)="cellClicked(1, 1)">{{ board[1][1] === 1 ? 'X' : (board[1][1] === 2 ? 'O' : '') }}</div>
+                <div class="celda" (click)="cellClicked(1, 2)">{{ board[1][2] === 1 ? 'X' : (board[1][2] === 2 ? 'O' : '') }}</div>
+              </div>
+              <div class="celdas">
+                <div class="celda" (click)="cellClicked(2, 0)">{{ board[2][0] === 1 ? 'X' : (board[2][0] === 2 ? 'O' : '') }}</div>
+                <div class="celda" (click)="cellClicked(2, 1)">{{ board[2][1] === 1 ? 'X' : (board[2][1] === 2 ? 'O' : '') }}</div>
+                <div class="celda" (click)="cellClicked(2, 2)">{{ board[2][2] === 1 ? 'X' : (board[2][2] === 2 ? 'O' : '') }}</div>
+              </div>
         </div>
         
-        <button>RESETEAR JUEGO</button>
+        <button (click)="resetGame()">RESETEAR JUEGO</button>
+        <button (click)="rest()">¿Jugamos de nuevo?</button>
+        
     </div>
 
 

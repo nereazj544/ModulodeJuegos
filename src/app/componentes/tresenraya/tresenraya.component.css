@@ -8,6 +8,17 @@
     align-items: center;
     height: 700px;
 }
+body{
+    background-color: aqua;
+}
+
+/* !JUGADOR */
+
+.jugador{
+    margin-top: 50px;
+    font-size: 29px;
+    text-align: center;
+}
 
 /* !RESULTADO */
 
@@ -22,7 +33,7 @@
 
 .img{
     padding: 1px;
-    width: 90px; height: 80px;
+    width: 90px; height: 90px;
 }
 
 /* !CELDAS */
