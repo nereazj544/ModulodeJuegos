@@ -23,6 +23,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { ErrorComponent } from './componentes/error/error.component';
 import { BricksBreakComponent } from './componentes/bricks-break/bricks-break.component';
+import { TresenrayaComponent } from './componentes/tresenraya/tresenraya.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { BricksBreakComponent } from './componentes/bricks-break/bricks-break.co
     PptComponent,
     InicioComponent,
     ErrorComponent,
-    BricksBreakComponent
+    BricksBreakComponent,
+    TresenrayaComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,48 @@
+<body>
+    <mat-toolbar color="accent">
+        <a routerLink=""> <!--! Sin nada se va directo al inicio-->
+            <button mat-incon-button class="Boton-Menu" arial-label="Menu" matTooltip="Atras">
+                <mat-icon>arrow_back</mat-icon>
+            </button>
+        </a>
+    <span>Tres en raya</span>
+</mat-toolbar>
+    
+    
+    <div class="container">
+        <div class="resultados">
+            <div class="resultado1">
+                <img class="img" src="../../../assets/img/jingyuan.png" alt="">
+                <span>Player 1: {{cplay1}}</span>
+            </div>
+            <div class="resultado2">
+                <img class="img" src="../../../assets/img/blade.png" alt="">
+                <span>Player 2: {{cplay2}}</span>
+            </div>
+        </div>
+        
+        <div class="game">
+            <div class="celdas">
+                <div class="celda"></div>
+                <div class="celda"></div>
+                <div class="celda"></div>
+            </div>
+            <div class="celdas">
+                <div class="celda"></div>
+                <div class="celda"></div>
+                <div class="celda"></div>
+            </div>
+            <div class="celdas">
+                <div class="celda"></div>
+                <div class="celda"></div>
+                <div class="celda"></div>
+            </div>
+        </div>
+        
+        <button>RESETEAR JUEGO</button>
+    </div>
+
+
+
+<!-- !end -->
+</body>

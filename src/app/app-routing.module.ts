@@ -5,6 +5,7 @@ import { InicioComponent } from './componentes/inicio/inicio.component';
 import { ErrorComponent } from './componentes/error/error.component';
 import { PortafoliosComponent } from './componentes/portafolios/portafolios.component';
 import { BricksBreakComponent } from './componentes/bricks-break/bricks-break.component';
+import { TresenrayaComponent } from './componentes/tresenraya/tresenraya.component';
 
 const routes: Routes = [
   //!PAGINA INICIO
@@ -14,6 +15,7 @@ const routes: Routes = [
 
   {path: 'piedra-papel-tijera', component: PptComponent },
   {path: 'BrickBreaker', component: BricksBreakComponent},
+  {path: 'Tresenraya', component: TresenrayaComponent},
   
   //!PORTAFOLIOS (CV)
   {path: 'portafolios', component: PortafoliosComponent},

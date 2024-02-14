@@ -12,10 +12,10 @@ body{
     position: absolute;
     cursor: move;
     background-image: url(../../../assets/img/leewon3.png);
-    margin-top: 20px;
     margin-left: 1200px;
     position: absolute;
 }
+
 
 mat-toolbar{
     flex: 1 1 auto;
@@ -37,7 +37,9 @@ mat-list{
     /*display: inline-flex;
     */margin: 30px;
     flex: 2;
-    color: blue;
+    color: black;
+    text-shadow:6px 3px 5px #45c7f3;
+    flex-direction: column;
     background-color: rgba(115, 116, 115, 0.334);
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -50,14 +52,13 @@ mat-list{
     padding: 25px;
 }
 
-.nombrejuego{
-    font-weight: 70%;
-
+p{
+    font-weight: bold;
 }
 
 .buttonjuego{
     background-color: rgba(138, 163, 229, 0.615);
-    padding: 3px;
+    padding: 4px;
     border: solid black 3px;
     font-size: 15px;
     border-radius: 0%;
@@ -65,14 +66,18 @@ mat-list{
     -moz-border-radius: 0%;
     -ms-border-radius: 0%;
     -o-border-radius: 0%;
+    font-weight: bold;
 }
 
 
-/* ! FONDOS */
+/* ! FONDOS - juegos */
 
 .ppt{
     background-image: url(/../../assets/img/bannerjuego1.png);
 }
 .ladrillos{
     background-image: url(/../../assets/img/bannerjuego2.png);
+}
+.tresraya{
+    background-image: url(/../../assets/img/bannerjuego3.png);
 }

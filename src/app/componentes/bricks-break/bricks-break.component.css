@@ -11,3 +11,33 @@ button {
 span {
     font-size: 25px;
 }
+
+
+/* ! JUEGO */
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background:url(../../../assets/img/bbwall.png) no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+/* .gamecontainer{
+    background-color: rgba(255, 255, 255, 0.327);
+    border: 6px solid black;
+    width: 500px; height: 600px;
+} */
+
+
+/* !PUNTUAJE */
+
+p{
+    text-shadow: 4px -1px 0px #705B4F;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
