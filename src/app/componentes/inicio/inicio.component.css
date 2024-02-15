@@ -2,17 +2,19 @@
     margin: 0; padding: 0;
 }
 body{
-    background: black  scroll;
+    background: black;
 }
 
-/* Caja movible */
+/* !Caja movible */
 .boxmovible{
     width: 242px;
-    height: 234px;
+    height: 231px;
     position: absolute;
     cursor: move;
-    background-image: url(../../../assets/img/leewon3.png);
-    margin-left: 1200px;
+    background-image: url(../../../assets/img/leewon3.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 1290px;
     position: absolute;
 }
 
@@ -34,8 +36,13 @@ button{
 /* ! MAT-LIST */
 
 mat-list{
-    /*display: inline-flex;
-    */margin: 30px;
+    height: 100px;
+    width: 1200px;
+    padding: 1px;
+    display: inline-flex;
+    margin-left: 100px;
+    text-align: center;
+    margin-top: 30px;
     flex: 2;
     color: black;
     text-shadow:6px 3px 5px #45c7f3;
@@ -57,7 +64,7 @@ p{
 }
 
 .buttonjuego{
-    background-color: rgba(138, 163, 229, 0.615);
+    background-color: rgba(40, 196, 102, 0.964);
     padding: 4px;
     border: solid black 3px;
     font-size: 15px;
@@ -75,9 +82,13 @@ p{
 .ppt{
     background-image: url(/../../assets/img/bannerjuego1.png);
 }
-.ladrillos{
+.tresraya{
     background-image: url(/../../assets/img/bannerjuego2.png);
 }
-.tresraya{
+.ladrillos{
     background-image: url(/../../assets/img/bannerjuego3.png);
+}
+
+.juego{
+    background-color: aqua;
 }
