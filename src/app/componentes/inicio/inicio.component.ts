@@ -21,4 +21,9 @@ export class InicioComponent {
     
   }
   */
+
+  handleSearch(value: string){
+    console.log(value)
+  }
+  
 }

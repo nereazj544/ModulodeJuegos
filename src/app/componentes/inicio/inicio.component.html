@@ -5,7 +5,11 @@
         </button>
         <span>MODULOS DE JUEGOS</span>
     </mat-toolbar>
-    
+
+    <!-- !buscador -->
+    <app-search (search)="handleSearch($event)"></app-search>
+
+<!-- !LISTA -->
     <mat-list>
         <div class="divjuegos ppt">
             <p>Juego 1: <span class="nombrejuego">Piedra, Papel o Tijeras</span></p>

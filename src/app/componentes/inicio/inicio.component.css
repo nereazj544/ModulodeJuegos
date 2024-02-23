@@ -14,7 +14,7 @@ body{
     background-image: url(../../../assets/img/leewon3.png) ;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-left: 1290px;
+    margin-left: 1398px;
     position: absolute;
 }
 
@@ -37,7 +37,7 @@ button{
 
 mat-list{
     height: 100px;
-    width: 1200px;
+    width: 1016px;
     padding: 1px;
     display: inline-flex;
     margin-left: 100px;

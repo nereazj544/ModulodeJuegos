@@ -1,0 +1,11 @@
+mat-form-field{
+    display: inline-flex;
+    width: 305px;
+    height: 100px;
+    font-size: 30px;
+}
+mat-icon{
+    color: blueviolet;
+    font-weight: bold;
+    font-size: 34px ;
+}

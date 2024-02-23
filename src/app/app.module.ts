@@ -1,9 +1,14 @@
+/** 
+ * !COSAS DE ANGULAR
+*/
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 /**
  * !COMPONENTES
@@ -15,6 +20,7 @@ import { ErrorComponent } from './componentes/error/error.component';
 import { BricksBreakComponent } from './componentes/bricks-break/bricks-break.component';
 import { TresenrayaComponent } from './componentes/tresenraya/tresenraya.component';
 import { MemorygameComponent } from './componentes/memorygame/memorygame.component';
+import { SearchComponent } from './componentes/search/search.component';
 
 /** 
  * ! MATERIAL ANGULAR
@@ -25,7 +31,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import {MatTooltipModule} from '@angular/material/tooltip';
-
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 
 @NgModule({
@@ -37,7 +44,8 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     ErrorComponent,
     BricksBreakComponent,
     TresenrayaComponent,
-    MemorygameComponent
+    MemorygameComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +56,11 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     MatIconModule,
     MatDividerModule,
     MatListModule,
-    MatTooltipModule
+    MatTooltipModule,
+    FormsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
