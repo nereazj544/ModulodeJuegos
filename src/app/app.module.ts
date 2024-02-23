@@ -19,8 +19,9 @@ import { InicioComponent } from './componentes/inicio/inicio.component';
 import { ErrorComponent } from './componentes/error/error.component';
 import { BricksBreakComponent } from './componentes/bricks-break/bricks-break.component';
 import { TresenrayaComponent } from './componentes/tresenraya/tresenraya.component';
-import { MemorygameComponent } from './componentes/memorygame/memorygame.component';
+// import { MemorygameComponent } from './componentes/memorygame/memorygame.component';
 import { SearchComponent } from './componentes/search/search.component';
+import { BoggleComponent } from './componentes/boggle/boggle.component';
 
 /** 
  * ! MATERIAL ANGULAR
@@ -44,8 +45,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     ErrorComponent,
     BricksBreakComponent,
     TresenrayaComponent,
-    MemorygameComponent,
-    SearchComponent
+    SearchComponent,
+    BoggleComponent
   ],
   imports: [
     BrowserModule,

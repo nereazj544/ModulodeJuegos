@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MemorygameComponent } from './memorygame.component';
+import { BoggleComponent } from './boggle.component';
 
-describe('MemorygameComponent', () => {
-  let component: MemorygameComponent;
-  let fixture: ComponentFixture<MemorygameComponent>;
+describe('BoggleComponent', () => {
+  let component: BoggleComponent;
+  let fixture: ComponentFixture<BoggleComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MemorygameComponent ]
+      declarations: [ BoggleComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(MemorygameComponent);
+    fixture = TestBed.createComponent(BoggleComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
