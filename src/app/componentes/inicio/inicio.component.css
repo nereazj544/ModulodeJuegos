@@ -92,3 +92,7 @@ p{
 .juego{
     background-color: aqua;
 }
+
+.memoria{
+    background-image: url(/../../assets/img/bannerjuego4.png);
+}

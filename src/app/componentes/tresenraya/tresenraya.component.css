@@ -43,9 +43,11 @@ body{
     width: 300px; height: 300px;
     cursor: pointer;
     background-color: white;
+    
 }
 
 .celdas{
+    
     font-weight: bold;
     background-color: white;
     display: flex;
@@ -60,8 +62,27 @@ body{
     border: 1px solid black;
 }
 
+.celda:hover{
+    background-color: #3f9ba737;
+}
+
 /* !BOTON */
+
+.botones{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 30px;
+    background-color: #BB5B90;
+    border: 5px solid white;
+    box-shadow: 0px 0px 10px 5px #BB5B90;
+}
+
+.botones:hover{
+    box-shadow: 0px 0px 10px 5px #3F9BA7;
+    background-color: #3F9BA7;
+}
 
 button{
     margin: 30px;
+    border: 2px solid black;
 }

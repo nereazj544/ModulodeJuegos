@@ -26,6 +26,7 @@
         </div>
         <div class="game">
             <div class="celdas">
+
                 <div class="celda" (click)="cellClicked(0, 0)">{{ board[0][0] === 1 ? 'X' : (board[0][0] === 2 ? 'O' : '') }}</div>
                 <div class="celda" (click)="cellClicked(0, 1)">{{ board[0][1] === 1 ? 'X' : (board[0][1] === 2 ? 'O' : '') }}</div>
                 <div class="celda" (click)="cellClicked(0, 2)">{{ board[0][2] === 1 ? 'X' : (board[0][2] === 2 ? 'O' : '') }}</div>
@@ -42,8 +43,8 @@
               </div>
         </div>
         
-        <button (click)="resetGame()">RESETEAR JUEGO</button>
-        <button (click)="rest()">¿Jugamos de nuevo?</button>
+        <button class="botones" (click)="resetGame()">RESETEAR JUEGO</button>
+        <button class="botones" (click)="rest()">¿Jugamos de nuevo?</button>
         
     </div>
 

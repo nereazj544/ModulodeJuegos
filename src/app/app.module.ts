@@ -10,6 +10,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
  */
 import { PptComponent } from './componentes/ppt/ppt.component';
 import { PortafoliosComponent } from './componentes/portafolios/portafolios.component';
+import { InicioComponent } from './componentes/inicio/inicio.component';
+import { ErrorComponent } from './componentes/error/error.component';
+import { BricksBreakComponent } from './componentes/bricks-break/bricks-break.component';
+import { TresenrayaComponent } from './componentes/tresenraya/tresenraya.component';
+import { MemorygameComponent } from './componentes/memorygame/memorygame.component';
 
 /** 
  * ! MATERIAL ANGULAR
@@ -20,10 +25,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import {MatTooltipModule} from '@angular/material/tooltip';
-import { InicioComponent } from './componentes/inicio/inicio.component';
-import { ErrorComponent } from './componentes/error/error.component';
-import { BricksBreakComponent } from './componentes/bricks-break/bricks-break.component';
-import { TresenrayaComponent } from './componentes/tresenraya/tresenraya.component';
+
 
 
 @NgModule({
@@ -34,7 +36,8 @@ import { TresenrayaComponent } from './componentes/tresenraya/tresenraya.compone
     InicioComponent,
     ErrorComponent,
     BricksBreakComponent,
-    TresenrayaComponent
+    TresenrayaComponent,
+    MemorygameComponent
   ],
   imports: [
     BrowserModule,
