@@ -6,5 +6,32 @@ import { Component } from '@angular/core';
   styleUrls: ['./boggle.component.css']
 })
 export class BoggleComponent {
+  protected Size: number = 4; //!esto definira el tamaño
+
+  protected cubes = [
+    'AAEEGN',
+    'ABBJOO',
+    'ACHOPS',
+    'AFFKPS',
+    'AOOTTW',
+    'CIMOTU',
+    'DEILRX',
+    'DELRVY',
+    'DISTTY',
+    'EEGHNW',
+    'EEINSU',
+    'EHRTVW',
+    'EIOSST',
+    'ELRTTY',
+    'HIMNUQu',
+    'HLNNRZ',
+
+  ];
+
+
+
+
+
+  
 
 }

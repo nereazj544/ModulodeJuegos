@@ -1,1 +1,32 @@
-<p>boggle works!</p>
+<body>
+    <mat-toolbar color="accent">
+        <a routerLink="">
+            <button mat-incon-button class="Boton-Menu" arial-label="Menu" matTooltip="Atras">
+                <mat-icon>arrow_back</mat-icon>
+            </button>
+        </a>
+        <span>Boggle</span>
+    </mat-toolbar>
+
+<!-- !TABLERO -->
+    <div class="elemeto">
+        <p>
+            <label>
+                Tamaño: <input type="number" [value]="Size">
+            </label>
+        </p>
+    </div>
+
+    <table>
+        <tr *ngFor="let r of [0,1,2,3]">
+            <td *ngFor="let c of [0,1,2,3]">
+                {{cubes [r*4 + c]}}
+            </td>
+        </tr>
+    </table>
+<button (click)="starGame()">Empezar!</button>
+
+
+
+    <!-- !END APP -->
+</body>

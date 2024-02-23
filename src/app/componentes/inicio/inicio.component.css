@@ -90,9 +90,10 @@ p{
 }
 
 .juego{
-    background-color: aqua;
+    background-color: #E71E6D;
 }
 
-.memoria{
+.boggle{
+    color: #E71E6D;
     background-image: url(/../../assets/img/bannerjuego4.png);
 }

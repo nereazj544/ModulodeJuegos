@@ -1,0 +1,42 @@
+/* !MAT-TOOBLAR */
+mat-toolbar{
+    flex: 1 1 auto;
+}
+
+button{
+    margin-right: 20px;
+    border: solid black 3px;
+}
+
+
+mat-icon{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.elemeto{
+    margin-top: 40px;
+    font-size: 30px;
+}
+input{
+    font-size: 25px;
+}
+
+/* !TABLERO */
+table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-collapse: collapse;
+
+}
+
+td {
+    text-align: center;
+    width: 90px;
+    height: 80px;
+    font-size: 49px;
+    padding: 8px;
+    border: 1px solid black;
+}
