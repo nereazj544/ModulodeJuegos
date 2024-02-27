@@ -29,7 +29,9 @@ export class BoggleComponent {
   ];
 
 
-
+  starGame(){
+    
+  }
 
 
   
