@@ -3,6 +3,20 @@
     padding: 0;
 }
 
+
+
+/* ! CAJA MOVIBLE */
+
+.boxmovible{
+    width: 242px;
+    height: 231px;
+    position: absolute;
+    cursor: move;
+    background-image: url(../../../assets/img/leewon3.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
 /* ! MAT TOOLBAR Y ICON */
 mat-toolbar {
     flex: 1 1 auto;
@@ -38,16 +52,16 @@ mat-icon {
 /*! Componentes del portafolios*/
 
 .bien {
-    width: 100%;
-    height: 100%;
+    width: 1920px;
+    height: 1080px;
     /* background-size: co; */
     background: url(../../../assets/img/portafolios1.png);
     background-repeat: no-repeat;
 }
 
 .SobreMi {
-    width: 100%;
-    height: 100%;
+    width: 1920px;
+    height: 1080px;
     background-color: #0072ff;
     background-repeat: no-repeat;
     /* margin-top: 40px; */
@@ -113,14 +127,10 @@ mat-icon {
 
 /* !Sobre Mi */
 
-section> .bio{
-    display: flex;
-    flex-direction: column;
-}
-
 .bio {
-    align-items: center;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     background-color: #49FF18;
 }
 
