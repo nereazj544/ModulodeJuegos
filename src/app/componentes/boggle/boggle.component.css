@@ -39,4 +39,23 @@ td {
     font-size: 49px;
     padding: 8px;
     border: 1px solid black;
+    cursor: pointer;
+}
+
+
+
+td.selecionar{
+    background: #bada55;
+}
+
+td.selectable{
+    cursor: pointer;
+}
+
+td.selectable:hover{
+    background: aqua;
+}
+
+button{
+    font-size: 40px;
 }

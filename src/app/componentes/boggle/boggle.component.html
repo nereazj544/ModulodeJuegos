@@ -17,14 +17,30 @@
         </p>
     </div>
 
-    <table>
+    <table *ngIf="letras.length">
         <tr *ngFor="let r of [0,1,2,3]">
-            <td *ngFor="let c of [0,1,2,3]">
-                {{cubes [r*4 + c]}}
+            <td *ngFor="let c of [0,1,2,3]"
+                [class.selecionar]="SelecionarCeldas.has(r + ',' + c)"
+                [class.selectable]="isCell(r, c)"
+            (click)="selecionarLetra(r, c)" >
+                {{letras [r*4 + c]}}
             </td>
         </tr>
     </table>
+
+    <p>{{this.SelecionarPalabra.join('')}}</p>
+
+    <ul>
+        <li *ngFor="let w of palabrasEncontradas">{{w}}</li>
+    </ul>
+
+    <button (click)="cPalabra">Palabra</button>
+
+
 <button (click)="starGame()">Empezar!</button>
+
+
+
 
 
 
