@@ -74,15 +74,10 @@ export class BoggleComponent implements OnInit {
     //! Esto es para que se muestren todas las letras de los cubos.
   }
 
-
-
-
-
   //!Puntuaje
   protected score() {
     return this.wordsFound.map(w => w.length)
   }
-
 
   //! Palabra encontrtada
   commitWord() {
@@ -100,6 +95,10 @@ export class BoggleComponent implements OnInit {
     this.selectedCells = new Set<string>();
   }
   
+  rest(){
+    this.wordsFound= [];
+
+  }
 
 
 

@@ -27,6 +27,7 @@ input{
 
 table{
     border-collapse: collapse;
+    margin: 40px;
 }
 
 td{
@@ -58,4 +59,10 @@ td.last-selected{
 
 button{
     font-size: 40px;
+}
+
+p{
+    display: inline-block;
+    font-size: 40px;
+
 }
