@@ -24,15 +24,12 @@ input{
 }
 
 /* !TABLERO */
-table {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-collapse: collapse;
 
+table{
+    border-collapse: collapse;
 }
 
-td {
+td{
     text-align: center;
     width: 90px;
     height: 80px;
@@ -42,19 +39,22 @@ td {
     cursor: pointer;
 }
 
+td.selectable{
+cursor: pointer;
+}
 
+td:hover{
+    background: aqua;
+}
 
-td.selecionar{
+td.selected{
     background: #bada55;
 }
 
-td.selectable{
-    cursor: pointer;
+td.last-selected{
+    border:  1px solid red;
 }
 
-td.selectable:hover{
-    background: aqua;
-}
 
 button{
     font-size: 40px;
