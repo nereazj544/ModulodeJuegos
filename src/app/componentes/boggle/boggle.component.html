@@ -19,10 +19,14 @@
         </td>
     </tr>
 </table>
+<div class="texto">
+    <p class="letras">{{letterSelected.join('')}}
+    </p>
+    <p class="puntos">
+        PUNTOS: {{score()}}
+    </p>
 
-<p>{{letterSelected.join('')}}
-    PUNTOS: {{score()}}
-</p>
+</div>
 
 <ul>
     <li *ngFor="let w of wordsFound">{{w}}</li>
