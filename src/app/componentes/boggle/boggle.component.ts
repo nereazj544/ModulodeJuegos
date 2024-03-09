@@ -11,11 +11,10 @@ export class BoggleComponent implements OnInit {
 
   protected cubes: string[] = [];
   protected letters: string[] = [];
+  protected wordsFound: string[] = [];
 
-  protected wordsFound: string [] = [];
-
-  //! Palabras
-  protected letterSelected: string [] = [];
+  //! Seleccion de las palabras y demas.
+  protected letterSelected: string[] = [];
   protected selectedCells = new Set<string>();
   protected selectedCellStack: [number, number][] = [];
 
@@ -23,10 +22,8 @@ export class BoggleComponent implements OnInit {
     this.starGame();
   }
 
-//! Se encarga de la logica del la seleccion de las letras
-
+  //! Se encarga de la logica del la seleccion de las letras.
   protected selectLetter(row: number, col: number) {
-
     if (!this.isCellSectable(row, col)) {
       return;
     }
@@ -44,23 +41,23 @@ export class BoggleComponent implements OnInit {
   }
 
   //! seleciona las celdas. si una celda esta seleciona y si es la ultima
-  protected isCellSectable(row: number, col: number){
+  protected isCellSectable(row: number, col: number) {
     const lastSelected = this.selectedCellStack[0];
-    
-    if(!this.selectedCellStack.length){
+
+    if (!this.selectedCellStack.length) {
       return true;
     }
 
     if (!this.selectedCells.has(`${row}, ${col}`)) {
       return Math.abs(row - lastSelected[0]) <= 1 && Math.abs(col - lastSelected[1]) <= 1;
-    }else{
+    } else {
       return row === lastSelected[0] && col === lastSelected[0];
     }
   }
 
-  protected isLastSelectedCell(row: number, col: number){
+  protected isLastSelectedCell(row: number, col: number) {
     return this.selectedCellStack.length &&
-    row == this.selectedCellStack[0][0] && col == this.selectedCellStack[0][1]
+      row == this.selectedCellStack[0][0] && col == this.selectedCellStack[0][1]
   }
 
   starGame() {
@@ -85,21 +82,21 @@ export class BoggleComponent implements OnInit {
   commitWord() {
     const word = this.letterSelected.join('').toLowerCase();
     // if (dicionary.includes(word)) {
-      this.wordsFound.push(word);
+    this.wordsFound.push(word);
     // }
 
     this.restSelection();
   }
-  
+
   //! Reinicia las celdas
   protected restSelection() {
     this.selectedCellStack = [];
     this.letterSelected = [];
     this.selectedCells = new Set<string>();
   }
-  
-  rest(){
-    this.wordsFound= [];
+
+  rest() {
+    this.wordsFound = [];
   }
 }
 //! esto sirve para que las caras de los cubos (son 6 letras por cada cubo) para que se muestre solo una.
