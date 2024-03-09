@@ -1,5 +1,9 @@
-<p>{{datosFormulario.nombre}}</p>
-<p>{{datosFormulario.email}}</p>
-<p>{{datosFormulario.mensaje}}</p>
-<button (click)="enviar()">Enviar</button>
+<form (submit)="enviar()">
+    <input type="text" name="nombre" placeholder="Nombre" id="" required [(ngModel)]="nombre">
+    <input type="text" name="email" placeholder="Email" required [(ngModel)]="email">
+    <textarea name="mensaje" [(ngModel)]="mensaje" cols="30" rows="10" required></textarea>
+    <button type="submit">Enviar</button>
+
+
+</form>
 
