@@ -98,7 +98,7 @@ mat-icon {
     padding: 11px 19px; */
     animation: animate 3s linear infinite;
     text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
-        0 0 200px #0072ff;
+    0 0 200px #0072ff;
     width: 80px;
     padding: 20px;
 }
@@ -178,5 +178,35 @@ span {
 .sm ul li{
     font-size: 25px;
     padding: 20px 10px;
+    
+}
 
+.smbutton{
+    width: 90px;
+    height: 30px;
+}
+
+.smbutton a{
+    text-decoration: none;
+    text-align: center;
+    color: red;
+}
+
+.smbutton a:hover{
+    color: #288a0d;
+    font-weight: bold;
+}
+
+
+
+/* ! Portafolios */
+
+.portafolios{
+    background-color: #707070;
+    width: 1920px;
+    height: 1000px;
+}
+
+.portafolios ul li{
+    list-style: none;
 }
