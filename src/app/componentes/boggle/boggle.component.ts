@@ -23,7 +23,8 @@ export class BoggleComponent implements OnInit {
     this.starGame();
   }
 
-  //! Metodo para selecionar las palabras (no funcina)
+//! Se encarga de la logica del la seleccion de las letras
+
   protected selectLetter(row: number, col: number) {
 
     if (!this.isCellSectable(row, col)) {
@@ -42,6 +43,7 @@ export class BoggleComponent implements OnInit {
     this.selectedCellStack.unshift([row, col]);
   }
 
+  //! seleciona las celdas. si una celda esta seleciona y si es la ultima
   protected isCellSectable(row: number, col: number){
     const lastSelected = this.selectedCellStack[0];
     
@@ -89,6 +91,7 @@ export class BoggleComponent implements OnInit {
     this.restSelection();
   }
   
+  //! Reinicia las celdas
   protected restSelection() {
     this.selectedCellStack = [];
     this.letterSelected = [];
@@ -97,13 +100,9 @@ export class BoggleComponent implements OnInit {
   
   rest(){
     this.wordsFound= [];
-
   }
-
-
-
-
 }
+//! esto sirve para que las caras de los cubos (son 6 letras por cada cubo) para que se muestre solo una.
 
 function shuffle<T>(items: T[]): void {
   for (let i = 0; i < items.length - 1; i++) {
