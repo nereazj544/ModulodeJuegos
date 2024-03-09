@@ -12,7 +12,7 @@
     height: 231px;
     position: absolute;
     cursor: move;
-    background-image: url(../../../assets/img/leewon3.png) ;
+    background-image: url(../../../assets/img/renderavatar.png) ;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -64,6 +64,7 @@ mat-icon {
     height: 1080px;
     background-color: #0072ff;
     background-repeat: no-repeat;
+    display: flex;
     /* margin-top: 40px; */
 }
 
@@ -128,9 +129,9 @@ mat-icon {
 /* !Sobre Mi */
 
 .bio {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    width: 300px;
+    display: block;
+    padding: 4px;
     background-color: #49FF18;
 }
 
@@ -145,16 +146,37 @@ mat-icon {
 }
 
 .bio p {
+    padding: 3px;
     text-align: center;
     margin-bottom: 20px;
 }
 
 .bio ul {
-    display: flex;
+    padding: 3px 9px;
     justify-content: center;
     margin: 0;
+    list-style: none;
 }
 
 .bio ul li {
     margin: 0 10px;
+}
+
+span {
+    list-style: none;
+    font-weight: bold;
+}
+
+.sm{
+    padding: 30px;
+}
+
+.sm ul{
+    font-size: 30px;
+    padding: 20px;
+}
+.sm ul li{
+    font-size: 25px;
+    padding: 20px 10px;
+
 }
