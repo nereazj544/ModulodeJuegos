@@ -215,9 +215,14 @@ span {
     background-color: #288a0d;
     width: 1920px;
     text-align: center;
-    align-items: center;
+    
 }
 
 .contacto > h1{
     padding: 20px;
+}
+
+.contacto > app-contacto-zona{
+    display: flex;
+    flex-direction: row;
 }

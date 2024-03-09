@@ -1,0 +1,20 @@
+.container-fromulario{
+    margin: 0 auto;
+}
+
+form{
+    flex-direction: column;
+    padding: 20px;
+}
+
+.input{
+    margin: 2px;
+}
+.input > #nombre {
+    margin: 2px;
+}
+
+button{
+    display: flex;
+    margin-left: 30px;
+}

@@ -1,9 +1,10 @@
-<form (submit)="enviar()">
-    <input type="text" name="nombre" placeholder="Nombre" id="" required [(ngModel)]="nombre">
-    <input type="text" name="email" placeholder="Email" required [(ngModel)]="email">
-    <textarea name="mensaje" [(ngModel)]="mensaje" cols="30" rows="10" required></textarea>
-    <button type="submit">Enviar</button>
-
-
-</form>
-
+<div class="container-fromulario">
+    <form (submit)="enviar()">
+        <div class="input">
+            <input type="text" name="nombre" placeholder="Nombre" id="nombre" required [(ngModel)]="nombre">
+            <input type="text" name="email" placeholder="Email" required [(ngModel)]="email" id="email">
+        </div>
+        <textarea name="mensaje" [(ngModel)]="mensaje" cols="90" rows="10" required></textarea>
+        <button type="submit">Enviar</button>
+    </form>    
+</div>
