@@ -34,6 +34,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { ContactoZonaComponent } from './componentes/contacto-zona/contacto-zona.component';
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     BricksBreakComponent,
     TresenrayaComponent,
     SearchComponent,
-    BoggleComponent
+    BoggleComponent,
+    ContactoZonaComponent
   ],
   imports: [
     BrowserModule,
